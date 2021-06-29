@@ -13,7 +13,7 @@ p {
     line-height: 28px;
     font-family: 'Quicksand', sans-serif;
 }
-.content__left h5{
+.col-lg-5 h5{
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -22,13 +22,13 @@ p {
     display: block;
     font-family: 'Pacifico', cursive;
 }
-.container{
+/* .container{
     display: flex;
-}
-.content__left{
+} */
+.col-lg-5{
     width: 240%;
 }
-.content__left h3{
+.col-lg-5 h3{
     font-size: 38px;
     line-height: 48px;
     font-weight: 600;
@@ -36,29 +36,78 @@ p {
 .morethan__content{
     background-color: #ff6600;
 }
+.agent-block-image{
+    background: url(../img/banner3.jpg) no-repeat center;
+    position: relative;
+    z-index: 1;
+    min-height: 600px;
+}
+
 
 .content__right{
     font-size: 18px;
     line-height: 28px;
-    color:rgba(22, 28, 45, 0.7)
+    color:rgba(22, 28, 45, 0.7);
     font-family: 'Quicksand', sans-serif;
 }
-.morethan__content{
-    display: flex;
-    justify-content: space-between;
+
+
+.align-items-center {
+    align-items: center !important;
 }
-.morethan__left img{
-    width: 94%;
-    height: 600px;
-    margin-left: -16px;
+.img {
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 6px;
+}
+.gal-slide-img {
+    position: relative;
+}
+.gal-slide-info {
+    left: auto;
+    bottom: 0;
+    width: 95%;
+    padding: 0 10px;
+    position: absolute;
+    opacity: 0;
+    color: white;
+    transform: translate3d(0, 10%, 0);
+    transition: opacity 0.3s;
+}
+.img:hover {
+    opacity: 0.85;
+    transition: all 0.4s;
+}
+.content-left-sec a h4 {
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+    font-weight: 700;
+}
+.gal-slide-info h4{
+    font-size: 18px;
+    color: white;
+}
+.gal-slide-info a:hover{
+    text-decoration: none;
+}
+.gal-slide-grid .gal-slide-info {
+    opacity: 1;
+    transition: all 0.4s;
+}
+.gal-slide-info span {
+    font-weight: 600;
+    color: #ffc600;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
-.morethan__right h5{
+.col-lg-6 h5{
     color: white;
     font-size: 22px;
     font-family: 'Pacifico', cursive;
 }
-.morethan__right h3{
+.col-lg-6 h3{
     font-size: 38px;
     line-height: 48px;
     font-weight: 600;
@@ -128,6 +177,12 @@ p {
 }
 .whatnew {
     background-color: #f7f7f7;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 .title__whatnew{
     text-align: center;
@@ -301,7 +356,7 @@ p {
     box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
 }
 #stats .w3-stats{
-    width: 1170px;
+    /* width: 1170px; */
     margin-top: -70px;
 }
 .numscroller {
